@@ -22,7 +22,8 @@ app.use(
   cors({
     origin:
       process.env.NODE_ENV !== "development"
-        ? process.env.FRONTEND_URL || "https://your-frontend-domain.com"
+        ? process.env.FRONTEND_URL ||
+          "https://fullstack-chat-app-1-80v6.onrender.com"
         : "http://localhost:5173",
     credentials: true,
   })
